@@ -1,0 +1,120 @@
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+  --ff-third: "Bad Script", cursive;
+  --fw-reg: 300;
+  --fw-bold: 900;
+  --clr-light: #ffe1f4;
+  --clr-dark: #aa8fe3;
+  --clr-accent: #d3756e;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --bs: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  --mwl: 300px;
+}
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.menu {
+  /* position: absolute; */
+  max-width: 100%;
+  top: 0;
+}
+
+.menu__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.menu li {
+  list-style: none;
+  text-decoration: none;
+  border-right: 2px solid var(--clr-dark);
+}
+
+li {
+  color: var(--clr-dark);
+  margin-right: 1em;
+  padding-right: 1em;
+}
+a:hover {
+  color: var(--clr-accent);
+  outline-offset: 3px;
+  font-weight: 100;
+}
+a {
+  color: var(--clr-dark);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h3);
+  /* font-family: var(--ff-third); */
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+p {
+  font-size: var(--fs-h3);
+  margin: 20px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 70px;
+}
+
+.footer__link {
+  font-weight: var(--ff-primary);
+}
+
+.footer__link:hover,
+.social-list__link:hover {
+  opacity: 0.6;
+}
+
+/* .footer__link:hover {
+  text-decoration: underline;
+} */
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  padding: 0;
+}
+
+.social-list__item {
+  margin: 0 0.5em;
+}
+
+.social-list__link {
+  padding: 0.5em;
+}
